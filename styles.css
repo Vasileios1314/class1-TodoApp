@@ -23,13 +23,25 @@
 .c-input{
     width: 80%;
     margin-right: 20%;
+    border-radius: 5px;
+    border: 1px solid #007bff;
 }
 
 .c-input-btn {
     width: 20%;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    color: #007bff;
+    cursor: pointer;
+    background-color: #fff;
 }
 
-.btn {
+.c-input-btn:hover{
+    background-color: #007bff;
+    color: #fff;
+}
+
+.clearBtn {
     width: 65px;
     padding: 10px;
     margin: 20px;
@@ -40,7 +52,52 @@
     color: #007bff;
     cursor: pointer;
 }
-.btn:hover{
+.clearBtn:hover{
     background-color: #007bff;
     color: #fff;
 }
+
+.todoDiv{   
+display: flex;
+justify-content: left;
+align-items: left;
+}
+
+.todoUl {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 2px;
+    background-color: #fff;
+    color: black;
+    font-size: 1.5 rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+.todo li {
+    flex: 1;
+}
+
+
+
+.complete-btn,
+.check-btn {
+    background: #fff;
+    border: none;
+    padding: 5px;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.checked{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
