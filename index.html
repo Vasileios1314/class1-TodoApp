@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="c-wrapper">
-        <div class="header">
-            <h2 class="header-title">To do</h2>
-            <span class="header-subtitle">a simple to do</span>
+      <div class="header">
+        <h2 class="header-title">Todo</h2>
+        <span class="header-sudtitle">a simple todo</span>
+      </div>
+      <div class="body">
+        <div class="body-input">
+          <input type="text" class="c-input" />
+          <button class="c-input-btn">Add</button>
         </div>
-        <div class="body">
-            <div class="body-input">
-                <input placeholder='Title . . .' type="text" class="c-input">
-                <button class="c-input-btn">Add</button>
-            </div>
-            <div class="todoDiv">
-                <ul class="todoUl" ></ul>
-            </div>
-            <div class="body-todos">this is where our todo's goes</div>
-        </div>
-        <div class="clearBtn">Clear</div>
+        <div class="body-todos"></div>
+      </div>
+      <div class="btn">Clear</div>
     </div>
-</body>
-<script type="text/javascript" src="index.js"></script>
+  </body>
+  <script type="text/javascript" src="index.js"></script>
 </html>

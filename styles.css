@@ -1,103 +1,62 @@
-*{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.c-wrapper{
+* {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .c-wrapper {
     display: flex;
     flex-direction: column;
-}
-.header{
+  }
+  
+  .header {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-around;
     background-color: #007bff;
     color: #fff;
-}
-
-.body-input{
+  }
+  
+  .body-input {
     display: flex;
     justify-content: space-around;
-    margin: 20px 0;
-}
-
-.c-input{
+    margin: 20px 0px;
+  }
+  
+  .c-input {
     width: 80%;
-    margin-right: 20%;
-    border-radius: 5px;
-    border: 1px solid #007bff;
-}
-
-.c-input-btn {
+    margin-right: 20px;
+  }
+  .c-input-btn {
     width: 20%;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-    color: #007bff;
-    cursor: pointer;
-    background-color: #fff;
-}
-
-.c-input-btn:hover{
-    background-color: #007bff;
-    color: #fff;
-}
-
-.clearBtn {
+  }
+  
+  .btn {
     width: 65px;
     padding: 10px;
     margin: 20px;
-    align-self: center;
     text-align: center;
+    align-self: center;
     border: 1px solid #007bff;
     border-radius: 5px;
     color: #007bff;
     cursor: pointer;
-}
-.clearBtn:hover{
+  }
+  
+  .btn:hover {
     background-color: #007bff;
     color: #fff;
-}
-
-.todoDiv{   
-display: flex;
-justify-content: left;
-align-items: left;
-}
-
-.todoUl {
-    min-width: 30%;
-    list-style: none;
-}
-
-.todo {
-    margin: 2px;
-    background-color: #fff;
-    color: black;
-    font-size: 1.5 rem;
+  }
+  
+  .body-todos {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .todo {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-}
-
-.todo li {
-    flex: 1;
-}
-
-
-
-.complete-btn,
-.check-btn {
-    background: #fff;
-    border: none;
-    padding: 5px;
-    margin: 2px;
     cursor: pointer;
-    font-size: 10px;
-}
-
-.checked{
-    text-decoration: line-through;
-    opacity: 0.5;
-}
-
+    margin-top: 5px;
+  }
