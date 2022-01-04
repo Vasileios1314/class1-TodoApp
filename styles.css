@@ -24,9 +24,8 @@
   .c-input {
     width: 80%;
     margin-right: 20px;
-  }
-  .c-input-btn {
-    width: 20%;
+    border: 1px solid #007bff;
+    border-radius: 5px;
   }
   
   .btn {
@@ -60,3 +59,19 @@
     cursor: pointer;
     margin-top: 5px;
   }
+
+  .c-input-btn{
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    width: 20%;
+    cursor: pointer;
+    color: #007bff;
+    background-color: #fff;
+  }
+
+  .c-input-btn:hover{
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  
