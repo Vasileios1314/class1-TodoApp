@@ -2,6 +2,7 @@ const btn = document.querySelector(".btn");
 const addBtn = document.querySelector(".c-input-btn");
 const allTodos = document.querySelector(".body-todos");
 
+
 document.addEventListener('DOMContentLoaded', getTodos);
 
 // when i click the btn
@@ -13,7 +14,7 @@ addBtn.addEventListener("click", () => {
   const todo = document.createElement("span");
   todo.classList.add("todo");
   todo.innerHTML = `<div class="todo-checkbox">
-  <input class="${input.value}" type="checkbox" id="checkbox-input" name="${input.value}" />
+  <input class="checkbox-c" type="checkbox" id="${input.value}" name="${input.value}" />
   <label for="${input.value}">${input.value}</label>
 </div>
 <div class="todo-bin">
@@ -41,6 +42,17 @@ saveLocalTodos(input.value)
 
   //   remove value from input
   input.value = "";
+
+  const checkbox = todo.querySelector(".checkbox-c");
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      console.log("is checked");
+      todo.classList.add("checked");
+    } else {
+      console.log("is not checked");
+      todo.classList.remove("checked");
+    }
+  });
 
   //   delete a todo
   const bin = todo.querySelector(".todo-bin");
@@ -94,7 +106,7 @@ function getTodos(){
     const todo = document.createElement("span");
     todo.classList.add("todo");
     todo.innerHTML = `<div class="todo-checkbox">
-    <input class="${todoDis}" type="checkbox" id="checkbox-input" name="${todoDis}" />
+    <input class="checkbox-c" type="checkbox" id="${todoDis}" name="${todoDis}" />
     <label for="${todoDis}">${todoDis}</label>
   </div>
   <div class="todo-bin">
@@ -110,6 +122,17 @@ function getTodos(){
       ></path>
     </svg>
   </div>`;
+
+  const checkbox = todo.querySelector(".checkbox-c");
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      console.log("is checked");
+      todo.classList.add("checked");
+    } else {
+      console.log("is not checked");
+      todo.classList.remove("checked");
+    }
+  });
   
   const bin = todo.querySelector(".todo-bin");
   bin.addEventListener("click", () => {
@@ -118,6 +141,8 @@ function getTodos(){
   
   
     allTodos.append(todo);
+
+    
   })
 }
 

@@ -74,4 +74,8 @@
     color: #fff;
   }
 
+  .todo.checked {
+    background-color: lightgray;
+    text-decoration: line-through;
+  }
   
